@@ -1,6 +1,6 @@
 <html>
 <head>
-<Title>Яна обделалась</Title>
+<Title>Registration Form</Title>
 <style type="text/css">
     body { background-color:
  #fff; border-top: solid 10px #000;
