@@ -8,11 +8,6 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "saplin64@saplin", "pwd" => "Amerika1", "Database" => "БазаSQL", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:saplin.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
-
 }
 echo "<h3>Table created.</h3>";
 ?>
