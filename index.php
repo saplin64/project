@@ -33,7 +33,7 @@ name="email" id="email"/></br>
 name="name" id="name"/></br>
 MONTH/YEAR  <input type="text" 
 name="name" id="name"/></br>
-      <input type="submit" 
+   Ok   <input type="submit" 
 name="submit" value="Submit" />
 </form>
 <?php
