@@ -7,6 +7,6 @@ name="email" id="email"/></br>
 name="name" id="name"/></br>
 MONTH/YEAR  <input type="text" 
 name="name" id="name"/></br>
-    <input type="Ok" 
-name="submit" value="Submit" />
+    <input type="Submit" 
+name="ok" value="Submit" />
 <html>
