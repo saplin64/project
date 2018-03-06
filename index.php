@@ -8,5 +8,5 @@ name="name" id="name"/></br>
 MONTH/YEAR  <input type="text" 
 name="name" id="name"/></br>
     <input type="Submit" 
-name="ok" value="Submit" />
+name="submit" value="ok" />
 <html>
