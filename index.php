@@ -10,4 +10,6 @@ MONTH/YEAR  <input type="text"
 name="name" id="name"/></br>
     <input type="Submit" 
 name="submit" value="ok" />
+<input type="Submit" 
+name="submit" value="Menu" />
 <html>
