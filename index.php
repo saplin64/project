@@ -22,8 +22,8 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Register here!</h1>
-<p>Fill in your name and 
+// <h1>Register here!</h1>
+//<p>Fill in your name and 
 email address, then click <strong>Submit</strong> 
 to register.</p>
 <form method="post" action="index.php" 
