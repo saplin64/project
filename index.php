@@ -11,5 +11,5 @@ name="name" id="name"/></br>
     <input type="Submit" 
 name="submit" value="ok" />
 <input type="Submit" 
-name="submit" value="Menu" />
+name="submit1" value="Menu" />
 <html>
