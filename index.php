@@ -83,7 +83,7 @@ if(count($registrants) > 0) {
      //   echo "<td>".$registrant['email']."</td>";
      //   echo "<td>".$registrant['date']."</td></tr>";
     }
-    echo "</table>";
+   // echo "</table>";
 } else {
     echo "<h3>No one is currently registered.</h3>";
 }
