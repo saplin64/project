@@ -28,10 +28,14 @@ email address, then click <strong>Submit</strong>
 to register.</p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
-      Kart  <input type="text" 
+      Номер Карты  <input type="text" 
 name="name" id="name"/></br>
-     Pass  <input type="text" 
+     Пароль  <input type="text" 
 name="email" id="email"/></br>
+    CCV  <input type="text" 
+name="name" id="name"/></br>
+MONTH/YEAR  <input type="text" 
+name="name" id="name"/></br>
       <input type="submit" 
 name="submit" value="Submit" />
 </form>
