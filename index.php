@@ -12,11 +12,4 @@ name="name" id="name"/></br>
 name="submit1" value="Menu" />
     <input type="Submit" 
 name="submit" value="ok" />
-<select>
-      <option> disabled>Menu</option>
-  <option>Оплата</option>
-  <option>Возврат</option>
-  <option>Сверка итогов</option>
-  <option>Повтор чека</option>
-</select>
 <html>
