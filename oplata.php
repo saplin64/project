@@ -1,6 +1,6 @@
 <html>
 <h3>Оплата</h3>
-<h4>Введите сумму</h4>
+<h4>Введите сумму(руб):</h4>
 <input type="text" 
 name="name" id="name"/></br>
 <input type="Submit" 
