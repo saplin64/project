@@ -14,10 +14,10 @@ function check_code($code, $cookie)
 // НЕ ЗАБУДЬТЕ ЕГО ИЗМЕНИТЬ!
 
 // Работа с сессией, если нужно - раскомментируйте тут и в captcha.php, удалите строчки, где используются куки
-session_start();
-$cap = $_SESSION['captcha'];
-$cap = md5($cap);
-session_destroy();
+//session_start();
+//$cap = $_SESSION['captcha'];
+//$cap = md5($cap);
+//session_destroy();
 
 	if ($code == $cap){return TRUE;}else{return FALSE;} // если все хорошо - возвращаем TRUE (если нет - false)
 	
