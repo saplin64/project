@@ -8,8 +8,6 @@ name="email" id="email"/></br>
 name="name" id="name"/></br>
 MONTH/YEAR  <input type="text" 
 name="name" id="name"/></br>
-<input type="Submit" 
-name="submit1" value="Menu" />
     <input type="Submit" 
 name="submit" value="ok" />
 <html>
