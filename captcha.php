@@ -2,16 +2,16 @@
 // Устанавливаем переменную img_dir, которая примет значение пути к папке со шрифтами и (если потребуется) изображениями
 define ( 'DOCUMENT_ROOT', dirname ( __FILE__ ) );
 define("img_dir", DOCUMENT_ROOT."/captcha/img/"); // Если скрипт отказывается работать, то скорее всего ваш сервер не поддерживает $HTTP_SERVER_VARS. В таком случае, закомментируйте эту строчку и раскомментируйте следующую.
-//define("img_dir", "/captcha/img/");
+// define("img_dir", "/captcha/img/");
 
 // Подключаем генератор текста
 include("random.php");
 $captcha = generate_code();
 
 // Используем сессию (если нужно - раскомментируйте строчки тут и в go.php)
- session_start();
- $_SESSION['captcha']=$captcha;
-session_destroy();
+// session_start();
+// $_SESSION['captcha']=$captcha;
+// session_destroy();
 
 // Вносим в куки хэш капчи. Куки будет жить 120 секунд.
 $cookie = md5($captcha);
@@ -70,14 +70,3 @@ function img_code($code) // $code - код нашей капчи, который
 }
 img_code($captcha) // Выводим изображение
 ?>
-?php
-session_start(); // стартуем сессию
-if ($_POST['code'] == $_SESSION['code'])
-{
-print ("Капча введена верно.");
-}
-else
-{
-print ("Капча введена неверно.");
-}
-?> 
