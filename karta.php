@@ -1,5 +1,5 @@
 <html>
- <h3>Оплата</h3>
+ <h3>Добавить карту</h3>
 Номер Карты  <input type="text" 
 name="name" id="name"/></br>
      Пароль  <input type="text" 
