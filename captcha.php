@@ -70,3 +70,14 @@ function img_code($code) // $code - код нашей капчи, который
 }
 img_code($captcha) // Выводим изображение
 ?>
+?php
+session_start(); // стартуем сессию
+if ($_POST['code'] == $_SESSION['code'])
+{
+print ("Капча введена верно.");
+}
+else
+{
+print ("Капча введена неверно.");
+}
+?> 
