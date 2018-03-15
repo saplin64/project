@@ -6,6 +6,8 @@ name="name" id="name"/></br>
 <h5>Введите номер карты</h5>
 <input type="text" 
 name="name12" id="name12"/></br>
+<input type="Submit" 
+name="submit" value="Меню" />
     <input type="Submit" 
 name="submit" value="ok" />
 <html>
