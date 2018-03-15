@@ -9,9 +9,9 @@ include("random.php");
 $captcha = generate_code();
 
 // Используем сессию (если нужно - раскомментируйте строчки тут и в go.php)
-// session_start();
-// $_SESSION['captcha']=$captcha;
-// session_destroy();
+ session_start();
+ $_SESSION['captcha']=$captcha;
+session_destroy();
 
 // Вносим в куки хэш капчи. Куки будет жить 120 секунд.
 $cookie = md5($captcha);
