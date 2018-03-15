@@ -6,7 +6,7 @@ name="name" id="name"/></br>
 name="email" id="email"/></br>
 MONTH/YEAR  <input type="text" 
 name="name" id="name"/></br>
-Баланс  <input type="text" 
+Баланс(руб:)  <input type="text" 
 name="email" id="email"/></br>
 <input type="Submit" 
 name="submit" value="Меню" />
