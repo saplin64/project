@@ -3,6 +3,7 @@
 <h4>Введите сумму(руб):</h4>
 <input type="text" 
 name="name" id="name"/></br>
+<h5>Введите сумму(руб):</h5>
 <input type="text" 
 name="name12" id="name12"/></br>
 <input type="Submit" 
