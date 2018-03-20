@@ -11,7 +11,7 @@ name="year" id="email"/></br>
 Баланс (руб:)  <input type="text" 
 name="balanc" id="email"/></br>
 <input type="Submit" 
-name="submit" value="Меню" />
+name="submit1" value="Меню" />
     <input type="Submit" 
 name="submit" value="Добавить" />
 </html>
