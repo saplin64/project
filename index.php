@@ -9,7 +9,7 @@
     <div class="container">
           <h3>Выбор операции</h3><hr>
           <div><a href="oplata.php" class="current">Оплата</a></div>
-          <div><a href="vozvrat.php">Возврат</a>/div>
+          <div><a href="vozvrat.php">Возврат</a></div>
           <div><a href="sverka.php">Сверка итогов</a></div>
           <div><a href="karta.php">Добавить карту</a></div>
 
