@@ -62,10 +62,14 @@ if(isset($_POST["submit2"])) {
 		
 	 echo "<h3 style = 'color: red;'>Сумма должно быть больше 0</h3>";
 	}
-	}
 	else
 	{
 		 echo "<h3 style = 'color: red;'>Операция выполнена</h3>";
+	}
+	
+		
+		
+		
 	}
 	
  	
