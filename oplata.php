@@ -11,7 +11,7 @@ name="sum" id="sum"/></br>
 <input type="Submit" 
 name="submit" value="Меню" />
     <input type="Submit" 
-name="submit" value="ok" />
+name="submit2" value="ok" />
 
 <?php
 
@@ -26,7 +26,15 @@ catch (PDOException $e) {
 }
 
 
-if(isset($_POST["submit"])) {
+ $sql_select2 = "Select Balance From Card Where Ncard ='$card'";
+ 	$k1 = $conn->query($sql_select2);
+		$data = $k1->fetchAll();
+    foreach($data as $registrant) {
+	     $balance = $registrant['Balance'];	
+    }
+
+
+if(isset($_POST["submit2"])) {
       
  	$sum = $_POST['sum'];
  	$card = $_POST['card'];
@@ -34,12 +42,7 @@ if(isset($_POST["submit"])) {
  	$balance2;
 	 $balance;
       
-       $sql_select2 = "Select Balance From Card Where Ncard ='$card'";
- 	$k1 = $conn->query($sql_select2);
-		$data = $k1->fetchAll();
-    foreach($data as $registrant) {
-	     $balance = $registrant['Balance'];	
-    }
+     
       
     $sql_select = "SELECT * FROM Card WHERE Ncard ='$card'";
  $stmt = $conn->query($sql_select);
