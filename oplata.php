@@ -64,12 +64,15 @@ if(isset($_POST["submit2"])) {
 	}
 	else
 	{
-		 echo "<h3 style = 'color: red;'>Операция выполнена</h3>";
+		if($sum>$balance){
+		 echo "<h3 style = 'color:red;'>Сумма должна быть не больше баланса</h3>";
+		}
+	}
+	else{
+		
+	echo "<h3 style = 'color:green;'>Операция выполнина</h3>";
 	}
 	
-		
-		
-		
 	}
 	
  	
