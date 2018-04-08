@@ -6,6 +6,8 @@ name="name" id="name"/></br>
 name="email" id="email"/></br>
 MONTH/YEAR  <input type="text" 
 name="name" id="name"/></br>
+Сумма  <input type="text" 
+name="sum" id="sum"/></br>
 <input type="Submit" 
 name="submit" value="Меню" />
     <input type="Submit" 
