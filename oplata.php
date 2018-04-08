@@ -33,7 +33,6 @@ if(isset($_POST["submit2"])) {
  	$sum = $_POST['sum'];
  	$card = $_POST['card'];
 	$date = date("Y-m-d H:i:s");
- 	$balance2;
 	 $balance;
 	
 	
