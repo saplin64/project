@@ -1,5 +1,6 @@
 <html>
       <h3>Оплата</h3>
+	<form action = "oplata.php" method = "post">
       Номер Карты  <input type="text" 
 name="card" id="name"/></br>
      Пароль  <input type="text" 
@@ -12,7 +13,7 @@ name="sum" id="sum"/></br>
 name="submit" value="Меню" />
     <input type="Submit" 
 name="submit2" value="ok" />
-
+</form>
 <?php
 
 
