@@ -64,13 +64,6 @@ if(isset($_POST["submit2"])) {
 	}
 	else{
 	
-	if($sum>$balance)
-	{
-	echo "<h3 style = 'color: red;'>На карте денег нет</h3>";
-	}		
-	}
-	else
-	{
 		echo "<h3 style = 'color: green;'>Операция совершена</h3>";
 	}
  	
