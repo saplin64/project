@@ -4,11 +4,11 @@
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql ="CREATE TABLE Kart (
 №Kart int NOT NULL,
+PRIMARY KEY (№Kart),
 Password int NOT NULL,
 Balance int NOT NULL,
 Year int NOT NULL,
-Month int NOT NULL,
-PRIMARY KEY (№Kart)
+Month int NOT NULL
 )";
     $conn->quary(sql);
     
