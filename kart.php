@@ -10,7 +10,7 @@ Balance INT NOT NULL,
 Year INT NOT NULL,
 Month INT NOT NULL
 )";
-    $conn->quary(sql);
+    $conn->quary($sql);
     
 }
 catch (PDOException $e) {
