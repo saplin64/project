@@ -64,9 +64,9 @@ if(isset($_POST["submit2"])) {
 	}
 	else
 	{
-		if($sum>$balance){
-		 echo "<h3 style = 'color:red;'>Сумма должна быть не больше баланса</h3>";
-		}
+		
+		 echo "<h3 style = 'color:green;'>Операция выполнина</h3>";
+		
 
 	}
 		
