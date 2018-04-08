@@ -71,7 +71,7 @@ if(isset($_POST["submit2"])) {
 	else{
 		
 	echo "<h3 style = 'color:green;'>Операция выполнина</h3>";
-	}
+	
 	
 	}
 	
