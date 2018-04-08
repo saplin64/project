@@ -26,12 +26,6 @@ catch (PDOException $e) {
 }
 
 
- $sql_select2 = "Select Balance From Card Where Ncard ='$card'";
- 	$k1 = $conn->query($sql_select2);
-		$data = $k1->fetchAll();
-    foreach($data as $registrant) {
-	     $balance = $registrant['Balance'];	
-    }
 
 
 if(isset($_POST["submit2"])) {
@@ -41,6 +35,16 @@ if(isset($_POST["submit2"])) {
 	$date = date("Y-m-d H:i:s");
  	$balance2;
 	 $balance;
+	
+	
+	
+	$sql_select2 = "Select Balance From Card Where Ncard ='$card'";
+ 	$k1 = $conn->query($sql_select2);
+		$data = $k1->fetchAll();
+    foreach($data as $registrant) {
+	     $balance = $registrant['Balance'];	
+    }
+
       
      
       
