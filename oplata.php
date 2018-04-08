@@ -55,16 +55,13 @@ if(isset($_POST["submit2"])) {
  	if(count($reg) == 0) {
      echo "<h3 style = 'color: red;'>Такой карты не существует</h3>";
      }
+
 	else{
 	
 	if($sum<0){
 		
 	 echo "<h3 style = 'color: red;'>Сумма должно быть больше 0</h3>";
 	}
-	}
-	else{
-	
-		echo "<h3 style = 'color: green;'>Операция совершена</h3>";
 	}
  	
 }
