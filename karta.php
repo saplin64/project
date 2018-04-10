@@ -1,19 +1,8 @@
 <html>
- <h3>Добавить карту</h3>
-Номер Карты  <input type="text" 
-name="nomerkart" id="name"/></br>
-     Пароль  <input type="text" 
-name="pass" id="email"/></br>
- Month  <input type="text" 
-name="motch" id="email"/></br>
- Year  <input type="text" 
-name="year" id="email"/></br>
-Баланс (руб:)  <input type="text" 
-name="balanc" id="email"/></br>
-<input type="Submit" 
-name="submit1" value="Меню" />
-    <input type="Submit" 
-name="submit" value="Добавить" />
+ <h3>Информация о организации</h3>
+Организация: Суши-бар ФЕНИКС
+Баланс:
+Счет организации:
 </html>
 
 <?php
