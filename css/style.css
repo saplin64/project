@@ -1,1 +1,89 @@
+body {
+  background: url("/img/autumn-studio-407865-unsplash.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.container {
+  width: 450px;
+  height: 220px;
+  background-color: rgba(100, 100, 101, 0.21);
+  margin: 350px auto 0 auto;
+  text-align: center;
+  border : 1px solid white;
+}
+
+.container-2 {
+  width: 450px;
+  max-height: 1200px;
+  background-color: rgba(100, 100, 101, 0.21);
+  margin: 350px auto 0 auto;
+  text-align: center;
+  border : 1px solid white;
+}
+
+legend {
+  font-size: 2.4em;
+  margin: auto;
+  color: white;
+}
+
+label {
+  font-size: 1em;
+  color: white;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  padding-left: 40px;
+  background-color: rgba(8, 25, 60, 0.56);
+  border : 2px solid white;
+  color: white;
+}
+
+.input-box {
+  width: 100px;
+  text-align: left;
+  padding-left: 100px;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border : 3px solid white;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: rgba(57, 55, 48, 0.43);
+  color: white;
+}
+
+.submit-box {
+  padding: 13px 30px;
+  margin: 5px 0 5px 0;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(#292b2b, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+h3 {
+  color: #ced6db;
+  font-size: 3em;
+  margin: auto;
+}
+
+a {
+  font-size: 1.8em;
+  color: white;
+}
 
