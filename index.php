@@ -11,7 +11,7 @@
           <div><a href="oplata.php" class="current">Оплата</a></div>
           <div><a href="vozvrat.php">Возврат</a></div>
           <div><a href="sverka.php">Сверка итогов</a></div>
-          <div><a href="karta.php">Добавить карту</a></div>
+          <div><a href="karta.php">Информация о организации</a></div>
 
     </div>
   </body>
