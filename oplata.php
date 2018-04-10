@@ -1,21 +1,33 @@
-<html>
-      <h3>Оплата</h3>
-	<form action = "oplata.php" method = "post">
-      Номер Карты  <input type="text" 
-name="card" id="name"/></br>
-     Пароль  <input type="text" 
-name="pas" id="email"/></br>
-MONTH/YEAR  <input type="text" 
-name="name" id="name"/></br>
-Сумма  <input type="text" 
-name="sum" id="sum"/></br>
-<input type="Submit" 
-name="submit" value="Меню" />
-    <input type="Submit" 
-name="submit2" value="ok" />
-</form>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Оплата</title>
+  </head>
+  <body>
+    <div class="container-2">
+      <form action = "oplata.php" method = "post">
+        <legend>Оплата</legend><hr>
+        <div class="input-box">
+          <label for="card">Номер Карты</label>
+          <input type="text" name="card" id="name"><br>
+          <label for="pas">Пароль</label>
+          <input type="text" name="pas" id="email"><br>
+          <label for="name">MONTH/YEAR</label>
+          <input type="text" name="name" id="name"><br>
+          <label for="sum">Сумма</label>
+          <input type="text" name="sum" id="sum"><br>
+        </div>
+        <div class="submit-box">
+          <input type="submit" name="menu" value="Меню" />
+          <input type="submit" name="okey" value="ОК" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
 <?php
-
 
 try {
     $conn = new PDO("sqlsrv:server = tcp:saplin.database.windows.net,1433; Database = БазаSQL", "saplin64", "Amerika1");
@@ -74,8 +86,3 @@ if(isset($_POST["submit2"])) {
 }
 ?>
 
-
-
-
-
-<html>
