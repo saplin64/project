@@ -5,7 +5,7 @@
 
 $sql_in = 
 "INSERT INTO Org (Name, Schet) 
-                   VALUES (?,?,?,?,?)";
+                   VALUES (?,?)";
     $stmt = $conn->prepare($sql_in);
     $stmt->bindValue(1, "Phenix");
     $stmt->bindValue(2, 100000);
