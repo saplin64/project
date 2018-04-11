@@ -6,6 +6,7 @@
     <title>Сверка итогов</title>
   </head>
   <body>
+	  <form action = "sverka.php" method = "post">
     <div class="container-2">
         <legend>Сверка итогов</legend><hr>
         <div class="input-box">
@@ -17,13 +18,24 @@
           <input type="submit" name="submit1" value="Меню">
           <input type="submit" name="submit2" value="ОК">
     </div>
+		  </form>
   </body>
   
   
   <?php
   
 
-  
+  <?php
+	  
+ try {
+    $conn = new PDO("sqlsrv:server = tcp:saplin.database.windows.net,1433; Database = БазаSQL", "saplin64", "Amerika1");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
   
   
   
