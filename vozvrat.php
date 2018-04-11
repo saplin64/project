@@ -45,7 +45,7 @@ if(isset($_POST["submit2"])){
  	$card = $_POST['card'];
         $sum2;
         $balance;
-	$S
+	$S;
 		
 		
 	$sql_select44 = "Select Schet From Org Where Name ='Phenix1'";
