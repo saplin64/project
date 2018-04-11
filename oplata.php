@@ -120,8 +120,25 @@ if(isset($_POST["submit2"])) {
 				 echo "<h3 style = 'color: red;'>Введены не корректные данные</h3>";
 			}
 			else
-			{
-				 echo "<h3 style = 'color: green;'>Операция выполнена</h3>";
+			{		 
+				
+				$balance1 = $balance - $sum;
+		$sql = "Update Card Set Balance = '$balance1' Where Ncard = '$card'";
+ 		$stmt = $conn->prepare($sql);
+     		$stmt->execute();
+				
+				
+				$sql2 = 
+"INSERT INTO Operat (Ncard,Sum,date) 
+                   VALUES (?,?,?)";
+    $stmt = $conn->prepare($sql_in2);
+    $stmt->bindValue(1,$card);
+    $stmt->bindValue(2, $sum);
+	 $stmt->bindValue(3, $date);
+    $stmt->execute();
+				
+				echo "<h3 style = 'color: green;'>Операция выполнена</h3>";
+				
 				
 			}
 			
