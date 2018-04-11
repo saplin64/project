@@ -11,7 +11,7 @@ $sql_in =
     $stmt->bindValue(2, 1000);
     $stmt->execute();
 	
-    $conn->query($sql);    
+    $conn->query($sql_in);    
 }
 catch (PDOException $e) {
     print("Error connecting to SQL Server.");
