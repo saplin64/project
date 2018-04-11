@@ -76,8 +76,12 @@ if(isset($_POST["submit2"])) {
 	}
 	else
 	{
-		
-		 echo "<h3 style = 'color:green;'>Операция выполнина</h3>";
+		if($sum>$balance)
+		{
+			 echo "<h3 style = 'color: red;'>Сумма превышает баланс на аккаунте</h3>";
+		}
+
+	
 		
 
 	}
