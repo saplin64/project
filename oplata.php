@@ -75,7 +75,7 @@ if(isset($_POST["submit2"])) {
 	
 	
 	
-	$sql_select4 = "Select Balance From Card Where Ncard ='$card'";
+	$sql_select4 = "Select Month From Card Where Ncard ='$card'";
  	$k4 = $conn->query($sql_select4);
 		$data = $k4->fetchAll();
     foreach($data as $registrant) {
