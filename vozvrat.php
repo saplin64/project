@@ -89,7 +89,7 @@ if(isset($_POST["submit2"])){
 		
 	 $balance2 = $S -$sum;	
 		
-		$sql6 = "Update Org Set Schet = '$balance2' Where Name = 'Phenix'";
+		$sql6 = "Update Org Set Schet = '$balance2' Where Name = 'Phenix1'";
  		$stmt = $conn->prepare($sql6);
      		$stmt->execute();
 		
