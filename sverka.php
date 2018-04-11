@@ -23,10 +23,7 @@
   
   
   <?php
-  
-
-  <?php
-	  
+   
  try {
     $conn = new PDO("sqlsrv:server = tcp:saplin.database.windows.net,1433; Database = БазаSQL", "saplin64", "Amerika1");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -64,6 +61,8 @@ if(count($registrants) > 0) {
     echo "<h3>No one is currently registered.</h3>";
 }								
 }
+	
+	
   if(isset($_POST["submit1"])){
      header('location: index.php');
 
