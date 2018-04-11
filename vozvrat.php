@@ -45,6 +45,17 @@ if(isset($_POST["submit2"])){
  	$card = $_POST['card'];
         $sum2;
         $balance;
+	$S
+		
+		
+	$sql_select44 = "Select Schet From Org Where Name ='Phenix1'";
+ 	$k44 = $conn->query($sql_select44);
+		$data = $k44->fetchAll();
+    foreach($data as $registrant) {
+	     $S = $registrant['Schet'];	
+    }		
+		
+		
         
         $sql_select2 = "Select Sum From Operat Where Ncard ='$card'";
  	$k1 = $conn->query($sql_select2);
@@ -65,12 +76,23 @@ if(isset($_POST["submit2"])){
         echo"<h3>Операции на данную сумму не найдено</h3>";
       }
         else{
+		
+
+		
           
           $balance1 = $balance + $sum;
 		$sql1 = "Update Card Set Balance = '$balance1' Where Ncard = '$card'";
  		$stmt = $conn->prepare($sql1);
      		$stmt->execute();
-				
+		
+		
+		
+	 $balance2 = $S -$sum;	
+		
+		$sql6 = "Update Org Set Balance = '$balance2' Where Name = 'Phenix'";
+ 		$stmt = $conn->prepare($sql6);
+     		$stmt->execute();
+		
 				
 				$sql2 = 
 "INSERT INTO Operat (Ncard,Sum,date) 
