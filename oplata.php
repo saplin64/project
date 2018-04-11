@@ -131,7 +131,7 @@ if(isset($_POST["submit2"])) {
 				$sql2 = 
 "INSERT INTO Operat (Ncard,Sum,date) 
                    VALUES (?,?,?)";
-    $stmt = $conn->prepare($sql_in2);
+    $stmt = $conn->prepare($sql2);
     $stmt->bindValue(1,$card);
     $stmt->bindValue(2, $sum);
 	 $stmt->bindValue(3, $date);
