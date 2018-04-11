@@ -55,6 +55,7 @@ if(isset($_POST["submit2"])) {
 	$Pas;
 	$Year;
 	$Month;
+	$balance1
 	
 	
 	
