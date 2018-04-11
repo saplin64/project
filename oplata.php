@@ -126,8 +126,8 @@ if(isset($_POST["submit2"])) {
 				
 					
 				$balance1 = $balance - $sum;
-		$sql = "Update Card Set Balance = '$balance1' Where Ncard = '$card'";
- 		$stmt = $conn->prepare($sql);
+		$sql1 = "Update Card Set Balance = '$balance1' Where Ncard = '$card'";
+ 		$stmt = $conn->prepare($sql1);
      		$stmt->execute();
 				
 				
