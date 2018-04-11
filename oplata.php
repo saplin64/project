@@ -121,21 +121,36 @@ if(isset($_POST["submit2"])) {
 			else
 			{		 
 			
-		
+				
+					
+				$balance1 = $balance - $sum;
+		$sql1 = "Update Card Set Balance = '$balance1' Where Ncard = '$card'";
+ 		$stmt = $conn->prepare($sql1);
+     		$stmt->execute();
+				
+				
+				$sql2 = 
+"INSERT INTO Operat (Ncard,Sum,date) 
+                   VALUES (?,?,?)";
+    $stmt = $conn->prepare($sql2);
+    $stmt->bindValue(1,$card);
+    $stmt->bindValue(2, $sum);
+	 $stmt->bindValue(3, $date);
+    $stmt->execute();
 				
 				echo "<h3 style = 'color: green;'>Операция выполнена</h3>";
 				
 				
-			}
+}
 			
 			
-		}
+}
 		
 
 	
 		
 
-	}
+}
 		
 }
 }
