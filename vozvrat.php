@@ -9,6 +9,7 @@
     <div class="container-2">
         <legend>Возврат</legend><hr>
         <div class="input-box">
+		<form action = "vozvrat.php" method = "post">
           <label for="name"><p style="width: 150px;">Введите сумму(руб)</p></label>
           <input type="text" name="sum" id="name">
           <label for="name12"><p style="width: 150px;">Введите номер карты</p></label>
@@ -17,6 +18,7 @@
         <div class="submit-box">
           <input type="submit" name="submit1" value="Меню">
           <input type="submit" name="submit2" value="ОК">
+		</form>
         </div>
     </div>
   </body>
@@ -51,9 +53,9 @@ catch (PDOException $e) {
 	     $sum2 = $registrant['Sum'];	
     }
         
-        $sql_select2 = "Select Balance From Card Where Ncard ='$card'";
- 	$k1 = $conn->query($sql_select2);
-		$data = $k1->fetchAll();
+        $sql_select3 = "Select Balance From Card Where Ncard ='$card'";
+ 	$k2 = $conn->query($sql_select3);
+		$data = $k2->fetchAll();
     foreach($data as $registrant) {
 	     $balance = $registrant['Balance'];	
     }
