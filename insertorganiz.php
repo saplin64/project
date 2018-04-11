@@ -8,7 +8,7 @@ $sql_in =
                    VALUES (?,?)";
     $stmt = $conn->prepare($sql_in);
     $stmt->bindValue(1, "Phenix");
-    $stmt->bindValue(2, 100000);
+    $stmt->bindValue(2, 1000);
     $stmt->execute();
 	
     $conn->query($sql);    
