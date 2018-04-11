@@ -156,7 +156,7 @@ if(isset($_POST["submit2"])) {
 
 
 if(isset($_POST["submit1"])) {
-
+ header('location: index.php');
 }
 ?>
 
