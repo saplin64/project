@@ -12,8 +12,7 @@
         <div class="input-box">
             <label for="name" style="font-size: 1.4em;">Номер карты</label><br>
           <input type="text" name="card" id="card">
-          <label for="name" style="font-size: 1.4em;">Период</label><br>
-          <input type="text" name="name" id="name">
+        
         </div>
           <input type="submit" name="submit1" value="Меню">
           <input type="submit" name="submit2" value="ОК">
