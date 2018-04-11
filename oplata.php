@@ -20,8 +20,8 @@
           <input type="text" name="sum" id="sum"><br>
         </div>
         <div class="submit-box">
-          <input type="submit" name="menu" value="Меню" />
-          <input type="submit" name="okey" value="ОК" />
+          <input type="submit1 name="menu" value="Меню" />
+          <input type="submit2 name="okey" value="ОК" />
         </div>
       </form>
     </div>
@@ -87,6 +87,11 @@ if(isset($_POST["submit2"])) {
 	}
 		
 }
+}
+
+
+if(isset($_POST["submit1"])) {
+
 }
 ?>
 
