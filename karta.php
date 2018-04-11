@@ -10,7 +10,7 @@
  <hr>
 <div>Организация: Суши-бар ФЕНИКС</div>
 <div>Счет организации:  <?php
- 
+ $S;
  
  $sql_select4 = "Select Schet From Org Where Name ='Phenix'";
  	$k4 = $conn->query($sql_select4);
@@ -18,7 +18,7 @@
     foreach($data as $registrant) {
 	     $S = $registrant['Schet'];	
     }
- Echo  $S;
+ echo $S;
 
 ?>
   </div>
