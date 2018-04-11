@@ -24,7 +24,7 @@ catch (PDOException $e) {
 <div>Счет организации:  <?php
  $S;
  
- $sql_select4 = "Select Schet From Org Where Name ='Phenix'";
+ $sql_select4 = "Select Schet From Org Where Name ='Phenix1'";
  	$k4 = $conn->query($sql_select4);
 		$data = $k4->fetchAll();
     foreach($data as $registrant) {
