@@ -18,7 +18,7 @@
     foreach($data as $registrant) {
 	     $S = $registrant['Schet'];	
     }
- 
+ Echo  $S;
 
 ?>
   </div>
