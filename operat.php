@@ -8,7 +8,6 @@ try {
   PRIMARY KEY(id),
 	Ncard varchar(30) NOT NULL,
 	Sum INT NOT NULL,
-	Operation varchar(30) NOT NULL,
   	date DATE
 	
 )";
