@@ -39,7 +39,7 @@ catch (PDOException $e) {
   
   
   
-	 		if(isset($_POST["submit2"])){
+if(isset($_POST["submit2"])){
         
         $sum = $_POST['sum'];
  	$card = $_POST['card'];
@@ -62,7 +62,7 @@ catch (PDOException $e) {
 	
 	    if($sum!=$sum2)
       {
-        echo"<h3>Операции на данную сумму не найдено</h3>"
+        echo"<h3>Операции на данную сумму не найдено</h3>";
       }
         else{
           
@@ -81,7 +81,7 @@ catch (PDOException $e) {
 	 $stmt->bindValue(3, $date);
     $stmt->execute();
 				
-          echo"<h3 style = 'color:green'>Сумма успешно возвращена</h3>"
+          echo"<h3 style = 'color:green'>Сумма успешно возвращена</h3>";
           
         }
      
@@ -91,9 +91,5 @@ catch (PDOException $e) {
   if(isset($_POST["submit1"])){
      header('location: index.php');
   }
-  
-  
-  
-  
   
   ?>
