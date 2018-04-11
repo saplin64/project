@@ -14,8 +14,10 @@
           <input type="text" name="card" id="name"><br>
           <label for="pas">Пароль</label>
           <input type="text" name="pas" id="email"><br>
-          <label for="name">MONTH/YEAR</label>
-          <input type="text" name="name" id="name"><br>
+          <label for="name">MONTH</label>
+          <input type="text" name="month" id="name"><br>
+	<label for="name">YEAR</label>
+          <input type="text" name="year" id="name"><br>
           <label for="sum">Сумма</label>
           <input type="text" name="sum" id="sum"><br>
         </div>
@@ -47,6 +49,12 @@ if(isset($_POST["submit2"])) {
  	$card = $_POST['card'];
 	$date = date("Y-m-d H:i:s");
 	 $balance;
+	$y = $_POST['year'];
+	$m = $_POST['month'];
+	$pas= $_POST['pas'];
+	$Pas;
+	$Year;
+	$Month;
 	
 	
 	
@@ -56,8 +64,32 @@ if(isset($_POST["submit2"])) {
     foreach($data as $registrant) {
 	     $balance = $registrant['Balance'];	
     }
+	
 
+	$sql_select3 = "Select Year From Card Where Ncard ='$card'";
+ 	$k2 = $conn->query($sql_select3);
+		$data = $k2->fetchAll();
+    foreach($data as $registrant) {
+	     $Year = $registrant['Year'];	
+    }
+	
+	
+	
+	$sql_select4 = "Select Balance From Card Where Ncard ='$card'";
+ 	$k4 = $conn->query($sql_select4);
+		$data = $k4->fetchAll();
+    foreach($data as $registrant) {
+	     $Month = $registrant['Month'];	
+    }
+	$sql_select5 = "Select Password From Card Where Ncard ='$card'";
+ 	$k5 = $conn->query($sql_select5);
+		$data = $k5->fetchAll();
+    foreach($data as $registrant) {
+	    $Pas = $registrant['Password'];	
+    }
       
+	
+	
      
       
     $sql_select = "SELECT * FROM Card WHERE Ncard ='$card'";
@@ -80,6 +112,22 @@ if(isset($_POST["submit2"])) {
 		{
 			 echo "<h3 style = 'color: red;'>Сумма превышает баланс на аккаунте</h3>";
 		}
+		else
+		{
+			
+			if($y!=$Year || $m!=$Month || $pas!=$Pas)
+			{
+				 echo "<h3 style = 'color: red;'>Введены не корректные данные</h3>";
+			}
+			else
+			{
+				 echo "<h3 style = 'color: green;'>Операция выполнена</h3>";
+				
+			}
+			
+			
+		}
+		
 
 	
 		
