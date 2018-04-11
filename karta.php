@@ -4,9 +4,13 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Информация о организации</title>
   </head>
-<div><br>Организация: Суши-бар ФЕНИКС</br></div>
-<div><br>Баланс:</br></div>
-<div><br>Счет организации:</br></div>
+ <body>
+  <div class="container">
+  <h3>Информация о организации</h3>
+ <hr>
+<div>Организация: Суши-бар ФЕНИКС</div>
+<div>Баланс:</div>
+<div>Счет организации:</div>
 </html>
 
 <?php
