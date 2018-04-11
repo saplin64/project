@@ -55,8 +55,6 @@ if(isset($_POST["submit2"])) {
 	$Pas;
 	$Year;
 	$Month;
-	$balance1;
-	
 	
 	
 	$sql_select2 = "Select Balance From Card Where Ncard ='$card'";
