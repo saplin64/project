@@ -1,5 +1,9 @@
 <html>
- <h3>Информация о организации</h3>
+ <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Информация о организации</title>
+  </head>
 <br>Организация: Суши-бар ФЕНИКС</br>
 <br>Баланс:</br>
 <br>Счет организации:</br>
