@@ -55,6 +55,16 @@ if(isset($_POST["submit2"])) {
 	$Pas;
 	$Year;
 	$Month;
+	$S;
+	
+	$sql_select44 = "Select Schet From Org Where Name ='Phenix1'";
+ 	$k44 = $conn->query($sql_select44);
+		$data = $k44->fetchAll();
+    foreach($data as $registrant) {
+	     $S = $registrant['Schet'];	
+
+    }
+	
 	
 	
 	$sql_select2 = "Select Balance From Card Where Ncard ='$card'";
@@ -127,6 +137,12 @@ if(isset($_POST["submit2"])) {
 		$sql1 = "Update Card Set Balance = '$balance1' Where Ncard = '$card'";
  		$stmt = $conn->prepare($sql1);
      		$stmt->execute();
+				
+				$balance2 = $S + $sum;
+		$sql3 = "Update Org Set Schet = '$balance2' Where Name ='Phenix1'";
+ 		$stmt = $conn->prepare($sql3);
+     		$stmt->execute();
+				
 				
 				
 				$sql2 = 
