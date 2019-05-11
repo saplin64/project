@@ -6,7 +6,7 @@
     <title>Выбор операции</title>
   </head>
   <body>
-    <div class="menu">
+    <div class="menu-main">
           <ul>
           <li><a href="oplata.php" class="current">Оплата</a></li>
           <li><a href="vozvrat.php">Возврат</a></li>
