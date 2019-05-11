@@ -116,7 +116,7 @@ a {
   transition: color .2s;
 }
 .menu-main a, .menu-main a:visited {color: #9d999d;}
-.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a.current, .menu-main a:hover{color: #BA86FE;}
 .menu-main a:before,
 .menu-main a:after {
   content: "";
