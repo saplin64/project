@@ -7,10 +7,9 @@
   </head>
   <body>
     <div class="menu">
-          <h3>Выбор операции</h3>
-          <hr>
-          <div><a href="oplata.php" class="current">Оплата</a></div>
-          <div><a href="vozvrat.php">Возврат</a></div>
+          <ul>
+          <li><a href="oplata.php" class="current">Оплата</a></li>
+          <li><a href="vozvrat.php">Возврат</a></li>
           <div><a href="sverka.php">Сверка итогов</a></div>
           <div><a href="karta.php">Информация о организации</a></div>
     </div>
